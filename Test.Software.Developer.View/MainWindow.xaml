@@ -1,0 +1,36 @@
+﻿<Window x:Class="Test.Software.Developer.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test.Software.Developer.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="Aqua"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="419*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="1833,1992,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="399,598,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="28" Width="456" Click="Button_Click"/>
+        <TextBox x:Name="TextName" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="92,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="609" Height="26"/>
+        <TextBox x:Name="TextLastName" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="92,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="609" Height="26"/>
+        <TextBox x:Name="TextSecondLastName" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="92,263,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="609" Height="26"/>
+        <TextBox x:Name="TextId" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="94,346,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="609" Height="26"/>
+        <Label Content="Nombre" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="92,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido Paterno" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="92,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido Materno" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="92,236,0,0" VerticalAlignment="Top"/>
+        <Label Content="Identificacion" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="94,320,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="269,428,0,0" VerticalAlignment="Top" Height="31" Width="304" Click="Button_Click"/>
+        <Label x:Name="MessageName" Content="Label" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="92,99,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label x:Name="MessageLastName" Content="Label" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="94,194,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label x:Name="MessageId" Content="Label" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="96,377,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label x:Name="MessageResponse" Content="Label" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="226,480,0,0" VerticalAlignment="Top" Foreground="#FF049200"/>
+        <Label x:Name="MessageError" Content="Label" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="226,488,0,0" VerticalAlignment="Top" Foreground="Red"/>
+
+    </Grid>
+</Window>
